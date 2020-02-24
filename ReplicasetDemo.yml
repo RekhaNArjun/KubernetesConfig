@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webappother
+  labels:
+    env: production
+    owner: rekha
+spec:
+  containers:
+  - name: webappother
+    image: deepakbedase/netcore:v2
+    ports:
+    - containerPort: 80
